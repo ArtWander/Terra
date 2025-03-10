@@ -42,16 +42,23 @@
 Неверно указнный атрибут random_string.resulT. Регистр символов критичен. Решение подсказвает сама система.  
 
 Итоговый исправленный код:  
-![Screen_9](https://github.com/ArtWander/Terra/blob/333bcfe832ecaad892b0752b0253571866c3fd76/img/4-5.jpg)  
+![Screen_9](https://github.com/ArtWander/Terra/blob/4dc594a046050bd3b7e18d1e28e5e0317a75b284/img/4-5.jpg)  
 
 6. Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды ```docker ps```.  
 Решение:
-![Screen_9](https://github.com/ArtWander/Terra/blob/333bcfe832ecaad892b0752b0253571866c3fd76/img/4-6.jpg)  
+![Screen_10](https://github.com/ArtWander/Terra/blob/4dc594a046050bd3b7e18d1e28e5e0317a75b284/img/4-6.jpg)  
 
 7. Замените имя docker-контейнера в блоке кода на ```hello_world```. Не перепутайте имя контейнера и имя образа. Мы всё ещё продолжаем использовать name = "nginx:latest". Выполните команду ```terraform apply -auto-approve```.
 Объясните своими словами, в чём может быть опасность применения ключа  ```-auto-approve```. Догадайтесь или нагуглите зачем может пригодиться данный ключ? В качестве ответа дополнительно приложите вывод команды ```docker ps```.
-![Screen_10](https://github.com/ArtWander/Terra/blob/333bcfe832ecaad892b0752b0253571866c3fd76/img/4-7.jpg)  
+Решение:  
+![Screen_11](https://github.com/ArtWander/Terra/blob/4dc594a046050bd3b7e18d1e28e5e0317a75b284/img/4-7.jpg)  
 
+9. Уничтожьте созданные ресурсы с помощью **terraform**. Убедитесь, что все ресурсы удалены. Приложите содержимое файла **terraform.tfstate**.
+Решение:  
+![Screen_12](https://github.com/ArtWander/Terra/blob/f0677a6f02a4aa6b20861c0ea79ba75fe1bf2a0e/img/4-8.jpg)
 
-11. Уничтожьте созданные ресурсы с помощью **terraform**. Убедитесь, что все ресурсы удалены. Приложите содержимое файла **terraform.tfstate**. 
-12. Объясните, почему при этом не был удалён docker-образ **nginx:latest**. Ответ **ОБЯЗАТЕЛЬНО НАЙДИТЕ В ПРЕДОСТАВЛЕННОМ КОДЕ**, а затем **ОБЯЗАТЕЛЬНО ПОДКРЕПИТЕ** строчкой из документации
+10. Объясните, почему при этом не был удалён docker-образ **nginx:latest**. Ответ **ОБЯЗАТЕЛЬНО НАЙДИТЕ В ПРЕДОСТАВЛЕННОМ КОДЕ**, а затем **ОБЯЗАТЕЛЬНО ПОДКРЕПИТЕ** строчкой из документации
+Решение:
+В описании ресурса docker_image использован параметр keep_locally = true.  
+![Screen_13](https://github.com/ArtWander/Terra/blob/68bdba1475cf34e089e6a01558763441be8fd7c7/img/4-9.jpg)
+    
