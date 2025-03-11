@@ -64,3 +64,12 @@
 В описании ресурса docker_image использован параметр keep_locally = true.  
 ![Screen_13](https://github.com/ArtWander/Terra/blob/68bdba1475cf34e089e6a01558763441be8fd7c7/img/4-9.jpg)
     
+
+### Задание 3*
+1. Установите [opentofu](https://opentofu.org/)(fork terraform с лицензией Mozilla Public License, version 2.0) любой версии
+2. Попробуйте выполнить тот же код с помощью ```tofu apply```, а не terraform apply.  
+Решение:
+
+![Screen_14](https://github.com/ArtWander/Terra/blob/2d0cdf3063a0b467a3d6cf8e02e8e5e15f4dcba5/img/6-1.jpg)
+![Screen_15](https://github.com/ArtWander/Terra/blob/2d0cdf3063a0b467a3d6cf8e02e8e5e15f4dcba5/img/6-2.jpg)
+   
